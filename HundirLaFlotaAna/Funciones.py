@@ -1,5 +1,6 @@
 import pprint
-from colorama import init, Fore, Back
+from colorama import init, Fore, Back ##colorama es una biblioteca de Python que permite dar color
+                                        ## a los textos en la terminal
 
 # Inicializar colorama para asegurarnos de que funcione en todas las plataformas
 init(autoreset=True)
@@ -24,7 +25,7 @@ barco1 = {"coord":[(1, 0), (1, 1), (1, 2), (1, 3)], ## diccionario
 
 ##Definimos un diccionario de barco2
 barco2 = {"coord":[(4, 3), (4, 4), (4, 5)], ## diccionario barco2
-          "vidas": 3} 
+          "vidas": 3}
 
 # Crear un tablero de disparos que el jugador verá
 tablero_disparos = [[" " for _ in range(10)] for _ in range(10)]
